@@ -1,0 +1,68 @@
+/* Default styles */
+.container {
+  border: 3px solid yellowgreen;
+  width: 550px;
+  height: auto;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.selectTag {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.singleBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.singleBox p {
+  margin: 5px 0;
+}
+
+.weatherIcon {
+  font-size: 36px;
+  color: #333;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Adjust margin for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 12px;
+  }
+
+  .selectTag {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .mainBox {
+    flex-direction: row; /* Stack boxes vertically on smaller screens */
+  }
+}
