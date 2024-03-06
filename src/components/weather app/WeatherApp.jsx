@@ -85,7 +85,7 @@ const WeatherApp = () => {
   return (
     <div>
       <h1>Weather Forecast</h1>
-      <h2>Weather Forecast for the next 3 days in {city}:</h2>
+      <h2>Weather Forecast for the Today and next 3 days in {city}:</h2>
       <div className="container">
         <select className="selectTag" value={city} onChange={handleCityChange}>
           <option value="Ho Chi Minh">Ho Chi Minh</option>
