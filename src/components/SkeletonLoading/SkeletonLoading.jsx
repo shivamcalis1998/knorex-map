@@ -10,8 +10,6 @@ const SkeletonLoading = () => {
       <div className="skeleton-box"></div>
       <div className="skeleton-box"></div>
       <div className="skeleton-box"></div>
-      <div className="skeleton-box"></div>
-      <div className="skeleton-box"></div>
     </div>
   );
 };
