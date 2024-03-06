@@ -1,0 +1,30 @@
+/* SkeletonLoading.css */
+
+.skeleton-loading {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skeleton-box {
+  width: 80%;
+  height: 20px;
+  background-color: #d4d6ee;
+  margin: 8px auto;
+  border-radius: 8px;
+  animation: pulse 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    background-color: #b3b7d8;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #f3f3f8;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #b3b7d8;
+  }
+}
