@@ -20,7 +20,7 @@ This project is a weather forecast website built using React.js for the frontend
 
 - **Frontend**:
   - React.js
-  - Axios (for making HTTP requests)
+  - fetch (for making HTTP requests)
   - React Icons (for displaying weather icons)
   - CSS (for styling)
 
