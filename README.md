@@ -28,4 +28,4 @@ This project is a weather forecast website built using React.js for the frontend
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/your-username/your-repo.git](https://github.com/shivamcalis1998/knorex-map.git)https://github.com/shivamcalis1998/knorex-map.git
+   git clone https://github.com/shivamcalis1998/knorex-map.git
