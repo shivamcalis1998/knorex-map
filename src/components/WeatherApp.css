@@ -1,6 +1,6 @@
 /* Default styles */
 .container {
-  border: 3px solid yellowgreen;
+  border: 3px solid rgb(53, 72, 14);
   width: 550px;
   height: auto;
   margin: 50px auto;
@@ -10,6 +10,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 18px;
   font-weight: 600;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+  color: rgb(229, 233, 240);
 }
 
 .selectTag {
@@ -22,6 +28,7 @@
   background-color: #fff;
   font-size: 16px;
   color: #333;
+  font-weight: 600;
 }
 
 .mainBox {
@@ -44,6 +51,10 @@
   margin: 5px 0;
 }
 
+.temp {
+  /* color: rgb(126, 126, 126); */
+}
+
 .weatherIcon {
   font-size: 36px;
   color: #333;
@@ -52,10 +63,15 @@
 /* Media query for mobile screens */
 @media screen and (max-width: 600px) {
   .container {
-    width: 90%; /* Adjust width for smaller screens */
-    margin: 20px auto; /* Adjust margin for smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
     font-size: 12px;
+  }
+
+  .weatherIcon {
+    font-size: 30px;
+    color: #333;
   }
 
   .selectTag {

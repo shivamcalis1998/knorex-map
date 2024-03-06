@@ -100,7 +100,9 @@ const WeatherApp = () => {
               <div key={index} className="singleBox">
                 <p>{formatDate(forecast.dt_txt)}</p>
                 <div className="singleBox">
-                  <p>{(forecast.main.temp - 273.15).toFixed(2)}°C</p>
+                  <p className="temp">
+                    {(forecast.main.temp - 273.15).toFixed(2)}°C
+                  </p>
                   <div className="weatherIcon">
                     {getWeatherIcon(forecast.weather[0].description)}
                   </div>
