@@ -10,6 +10,7 @@ This project is a weather forecast website built using React.js for the frontend
 - **Weather Forecast**: Display the weather forecast for the selected city for the next 3 days.
 - **Dynamic Icons**: Weather conditions are represented with dynamic icons.
 - **Skeleton Loading**: Display a loading skeleton while waiting for weather data to be fetched.
+- **Responsive**: completly responsive for mobile device as well.
 
 ## Screenshot
 ![photo_2024-03-06_19-08-06](https://github.com/shivamcalis1998/knorex-map/assets/114653221/a9b3f521-94f1-4aa7-8797-31c1d3122695)
