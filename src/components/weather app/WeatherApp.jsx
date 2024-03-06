@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import { FaSoundcloud, FaCloud, FaCloudShowersHeavy } from "react-icons/fa";
 import { BsFillCloudSunFill } from "react-icons/bs";
 import { IoMdSunny } from "react-icons/io";
-import SkeletonLoading from "../SkeletonLoading/SkeletonLoading"; // Import the SkeletonLoading component
+import SkeletonLoading from "../SkeletonLoading/SkeletonLoading";
 import "./WeatherApp.css";
 
 const WeatherApp = () => {
   const [city, setCity] = useState("Ho Chi Minh");
   const [forecastData, setForecastData] = useState([]);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true); // Set loading to true when fetching data
+    setLoading(true);
     const fetchWeatherData = async () => {
       try {
         const response = await fetch(
@@ -22,11 +22,11 @@ const WeatherApp = () => {
         setForecastData(
           data.list.filter((item, index) => index % 8 === 0).slice(0, 4)
         );
-        setLoading(false); // Set loading to false when data is fetched
+        setLoading(false);
       } catch (error) {
         setError("Error fetching weather data");
         console.error("Error fetching weather data: ", error);
-        setLoading(false); // Set loading to false in case of error
+        setLoading(false);
       }
     };
     fetchWeatherData();
