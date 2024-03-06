@@ -55,12 +55,26 @@ const WeatherApp = () => {
     const date = new Date(dateString);
     const today = new Date();
     const day = date.getDate();
+    const monthNames = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
     const monthIndex = date.getMonth();
 
     if (date.toDateString() === today.toDateString()) {
       return "Current Weather";
     } else {
-      return `${day}/${monthIndex + 1}`;
+      return `${day}/${monthNames[monthIndex]}`;
     }
   };
 
